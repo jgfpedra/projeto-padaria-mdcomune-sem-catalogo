@@ -1,0 +1,16 @@
+
+{
+  "manifest_version": 3,
+  "name": "MDComune - Remover Catálogo",
+  "version": "1.0.1",
+  "description": "Oculta o catálogo de soluções do MDComune.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.mdcomune.com.br/Madis*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
